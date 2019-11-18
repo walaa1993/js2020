@@ -1,0 +1,162 @@
+*{
+	padding:0;
+	margin: 0;
+}
+body{
+	 margin: 0px;
+}
+header{
+    background-color: #fff;
+    height: 70px;
+    position: fixed;
+}
+#logo{
+	float: left;
+	margin-top: 20px;
+	margin-left: 150px;
+	size: 3;
+}
+#nav-right{
+	float: right;
+	padding: 20px;
+	word-spacing: 50px;
+    margin-right: 150px;
+    margin-top: 5px; 
+}
+a{
+	text-decoration-line: none;
+	color: #000;
+}
+#head{
+	width: 100%;
+	clear: both;
+}
+.left{
+  position: absolute;
+  top: 50%;
+  left: 25%; 
+  transform: translate(-50%, -50%);
+  
+}
+#main2{
+
+	padding-left: 130px;
+}
+#box1{
+	    margin-bottom: 20px;
+	    height: 380px;
+	    padding: 15px;
+		width: 450px;
+     	text-align: justify;
+        float: left;
+        margin-top: 20px;
+        background-color: #aee;
+        border-radius: 25px;
+        box-sizing: border-box;
+}
+#box-mid{
+	    background-color: #defffa;
+	    height: 400px;
+     	text-align: justify;
+        float: left;
+        border-radius: 25px;
+        padding: 15px;
+        padding-top: 20px;
+        box-sizing: border-box;
+}
+#box2{
+	    margin-bottom: 20px;
+	    height: 380px;
+	    padding: 15px;
+	    width: 450px;
+     	text-align: justify;
+        float: left;
+        margin-top: 20px;
+        background-color: #aee;
+        border-radius: 25px;
+        box-sizing: border-box;
+}
+#main3{
+	margin: 0px;
+	clear: both;
+    box-sizing: border-box; 
+	
+}
+#block1{
+	float: left;
+	margin-left: 70px;
+}
+#block2{
+	width: 500px;
+	float: right;
+	margin-top: 70px;
+	margin-right: 150px;
+}
+#label-sec3{
+	font-weight: bolder;
+	font-size:40px;
+}
+#label2-sec3{
+	font-size:30px;
+}
+#personal{
+	color:blue;
+}
+#sec4{
+	clear: both;
+	text-align:center;
+	background-image: url('img/bck1.jpg');
+    height: 1000px;
+}
+#sec4 h1{
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+#sec4-box{
+	width: 400px;
+	background-color: #fff;
+	border-radius: 40px;
+    text-align-last: justify;
+    margin-left: 60px;
+    
+}
+.col{
+	float: left;
+	margin-left: 60px;	
+}
+#sec5{
+	clear: both;
+	background-repeat: no-repeat;
+	margin-left: 700px; 
+    
+}
+#jenna{
+	float: left;
+	position: absolute;
+    top: 380%;
+    left: 25%; 
+    transform: translate(-50%, -50%);
+}
+#nurse{
+	width: 100%;
+	float: right;
+}
+#sec6{
+	clear: both;
+	background-color: #f5f5f5;
+}
+#num{
+	width: 400px;
+	display: inline-block;
+	border-radius: 40px;
+    text-align-last: justify;
+    margin-left: 60px;
+}
+.number{
+	font-weight: 900;
+}
+#sec7{
+	clear: both;
+	background-image: url('img/pg.jpg');
+}

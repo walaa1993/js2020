@@ -1,0 +1,166 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#hero1{
+	background-image: url('img_3.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	text-align:center;
+	color: #fff;
+}
+#Login{
+	margin-top: 20px;
+}
+.navbar-form{
+	background-color: white;
+	padding: 20px;
+	width: 800px;
+	margin-left: 20%;
+}
+.navbar-form input{
+	border:none;
+	width: 200px;
+	border-right: 2px solid #dedede;
+}
+#sel{
+	border:none;
+	border-right: 2px solid #dedede;
+}
+#s{
+	border: none;
+	width: 100px;
+	margin-top: 5px;
+}
+#hero1 h2{
+	margin-top: 80px;
+	margin-bottom: 70px;
+}
+.container-fluid{
+	margin-top: 100px;
+}
+.container h3{
+	color: #34dddd;
+}
+#main a{
+	text-decoration: none;
+	color: #34dddd;
+}
+#main .fas{
+	color: #34dddd;
+}
+#main{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+#main img{
+	width: 40px;
+	height: 40px;
+}
+#content{
+	padding: 70px;
+}
+#main2{
+	margin-top: 20px;
+	background-color: #f8f9fa;
+	/*background-size: cover;*/
+}
+#grid p{
+	color: #dedede;
+}
+#edu{
+	color: #34dddd;
+}
+#hat{
+	width: 100px;
+	height: 80px;
+}
+#main3 {
+	background-color:#f8f9fa;
+	margin-top: 500px;
+	text-align:center;
+}
+#main3 h1{
+	color: #34dddd;
+	margin-bottom: 10px;
+}
+#main3 .fas{
+	color: #fff;
+}
+.thumbnail{
+	background-color: #fff;
+	height: 400px;
+}
+.thumbnail:hover{
+	box-shadow: 5px 10px 5px 5px #dedede;
+}
+#main4{
+	background-color: #fff;
+	background-size: cover;
+}
+#nav2{
+	background-color: #34dddd;
+}
+#form2{
+	background-color: #34dddd;
+	text-align:center;	 
+}
+#arrows{
+	margin-left: 400px;
+}
+form-control {
+	padding: 50px;
+	margin-top: 30px;
+}
+.hero-unit{
+	background-color: #fff;
+	text-align:center;
+}
+#ww{
+	padding-bottom: 100px;
+}
+#blog{
+	background-color: #34dddd;
+}
+footer{
+	background-color: #fff;
+	padding: 100px;
+}
+#last {
+	margin-top: 100px;
+}
+#last .fas{
+	word-spacing: 30px;
+	color: #34dddd;
+}
+#last .fab{
+	margin-right: 2em;
+	color: #34dddd;
+	font-size: 15px;
+}
+.list li{
+	line-height: 2.5em;
+	color: #34dddd;
+	list-style: none;
+}
+.head{
+	margin-top: 10px;
+	word-spacing: 20px;
+	padding-left: 100px;
+}
+#hi h1{
+	color: #34dddd;
+}
+#hi p{
+	line-height: 2.3em;
+}
+.ab h2{
+	color: #34dddd;
+}
+.parag{
+	color: #dedede;
+}
+.shadows{
+	box-shadow: 2.5px 2.5px 2.5px 2.5px #dedede;
+}

@@ -1,0 +1,44 @@
+  a{
+padding-right: 50px;
+padding-left: 50px;
+border-right: 2px solid red;
+ text-decoration-line: none;
+  } 
+  
+  a:hover{
+  	font-color:red;
+  	border-right: 4px solid black;
+  	font-weight: bolder;
+}
+  div{
+  	border: 2px solid red;
+  	width: 200px;
+  	height: 200px;
+  padding: 40px;
+  margin: 50px;
+  background-color: orange;
+  	display:inline-block;
+float: right;/*all content go right*/
+ display: none;/*deletes all or use visibility*/
+visibility: hidden;
+  }
+  #a{
+  	float: left;
+  }
+  p{
+  	clear: both; /*to clear the float*/
+  }
+  img{
+  	position: absolute;
+  	top: 0;
+  	right: 100px;
+  	z-index: 2;/*priority to the higher index*/
+  }
+  #poss2{
+  	top: 100px;
+  	right: 150;
+  	z-index: 1111;
+  }
+  img{
+  	opacity: 0.3;
+  }

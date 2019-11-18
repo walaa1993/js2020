@@ -1,0 +1,40 @@
+body{
+ margin: 0px;
+ background-color: #373737;
+ color: #fff;
+}
+header{
+	background-color: #ccc;
+    height: 50px;
+}
+#logo{
+	float: left;
+	margin-left: 20px; 
+}
+nav{
+	float: right;
+	margin-right: 20px;
+    margin-top: 15px;
+}
+nav a{
+	padding: 15px;
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	color: black;
+}
+.col{
+	width: 465px;
+	text-align: justify;
+    float: left;
+    margin: 20px;
+}
+.col h3{
+	background-color: #303030;
+	padding: 15px;
+}
+footer{
+	clear: both;
+	text-align: center;
+}

@@ -1,0 +1,86 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+body{
+	background-image: url('download.jfif');
+	background-repeat: no-repeat;
+	background-size: 100%
+}
+.hero-unit{
+	padding: 20px;
+	background-color: blue;
+	color: #fff;
+	padding-left: 30px;
+	
+}
+.hero-unit p{
+	font-size: 25px;
+}
+.hero-unit h1{
+	font-size:55px;
+}
+.navbar-search{
+	background-color: #dedede;
+}
+input{
+	margin: 10px;
+	padding: 5px;
+}
+.navbar-search pull-left{
+	height: 40px;
+}
+.row-fluid{
+	display: flex;
+	padding: 40px;
+	margin-left:100px;
+}
+.span3{
+	text-align: center;
+	padding: 35px;
+	margin: 10px;
+    background-color: #000;
+    margin-top: 20px;
+    border-radius: 20px;
+    align-items: center;
+    margin-right: 40px;
+}
+.span3 h3{
+	color: #fff;
+	font-family: sans-serif;
+}
+#font{
+    font-size: 50px;
+    color: red;
+    padding-top: 20px;
+}
+.span3 h3:hover{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	color: #ca0b00;
+
+}
+.span3:hover{
+	background-color: #fff;
+}
+.span2{
+	margin-top: 50px;
+	margin-left: -100px;
+}
+#sider{
+	height: 300px;
+	width: 300px;
+	margin-left: 10px;
+	border:5px solid #fff;
+}
+.navbar-search pull-left{
+	background-color: black;
+}
+.page-footer{
+	text-align:center;
+}
+.span8{
+	font-weight: bolder;
+	margin-top: 20px;
+}

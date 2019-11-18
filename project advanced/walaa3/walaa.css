@@ -1,0 +1,12 @@
+
+img{
+opacity: 0.3;
+padding: 50px;
+
+}
+div{
+	margin-left: 300px;
+}
+.a:hover{
+	opacity: 1;
+}
