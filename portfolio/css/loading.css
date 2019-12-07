@@ -1,0 +1,58 @@
+.rect{
+	border:3px solid gray;
+	width: 300px;
+
+	margin: auto;
+
+
+}
+#inner{
+	width: 50px;
+	height: 20px;
+	background-color: blue;
+	animation-name: back;
+	animation-duration: 10s;
+}
+@keyframes back{
+0%{width: 50px;}
+100%{width: 300px;}
+} 
+
+@keyframes one{
+from{color: #fff;}
+to{color: #000}
+} 
+#a{
+	font-size: 40px;
+	animation-name: one;
+	animation-duration: 1s;
+ 
+
+}
+@keyframes two{
+from{color: #fff;}
+to{color: #000}
+} 
+#b{
+		font-size: 40px;
+	animation-name: two;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	 
+}
+@keyframes three{
+from{color: #fff;}
+to{color: #000}
+} 
+#c{
+	font-size: 40px;
+	animation-name: three;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	
+}
+#a, #b, #c{
+	animation-direction: reverse;
+	/*animation-iteration-count: infinite;*/
+}
+

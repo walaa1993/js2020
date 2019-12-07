@@ -1,0 +1,25 @@
+body{
+	background-color: #dedede;
+}
+.box{
+	background-color: #2edede;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	animation-name: sqr;
+	animation-duration: 2s;
+	margin: 40px;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	transition-timing-function: ;
+}
+.box:hover{
+	animation-play-state: paused;
+}
+@keyframes sqr{
+	0%{transform: rotate(0deg); border-radius: 0 0 0 0; top:20px; left: 20px; }
+	25%{border-radius: 25%;}
+	50%{border-radius: 50%;}
+	75%{border-radius: 75%;}
+	100%{transform:rotate(1000deg); border-radius: 100%; background-color: blue; top:250px; left: 250px; }
+}

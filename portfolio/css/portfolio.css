@@ -1,0 +1,15 @@
+body{
+	background-color: #dedede;
+}
+#one{
+	width: 100%
+}
+#w{
+	border-radius: 50%;
+	box-shadow: 2px 2px 4px 2px #dedede;
+}
+#main{
+	margin-top: 260px;
+	animation-name: maroco;
+}
+@key

@@ -1,0 +1,49 @@
+body{
+	background-image: url(str.jfif);
+	background-repeat: repeat-y repeat-x;
+	background-position: left center;
+}
+#a{
+	position: relative;
+	animation-name: a;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+@keyframes a{
+	0%{left: 100%;}
+	100%{left: 0px;}
+}
+#b{
+	position: relative;
+	animation-name: b;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+}
+@keyframes b{
+	0%{left: 0px}
+	100%{left:100%;}
+}
+#c{
+	position: relative;
+	animation-name: c;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+@keyframes c{
+	0%{left: 0px}
+	100%{left: 100%;}
+}
+#d{
+	position: relative;
+	animation-name: d;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-delay: 6s;
+}
+@keyframes d{
+	0%{left: 0px}
+	100%{left: 100%}
+}

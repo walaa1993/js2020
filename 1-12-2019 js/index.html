@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		/*var x=10;
+		var is_married=true;
+		var userRow ={firstname:'john',lastname:'Doe'};
+		console.log(userRow.lastname);*/
+	/*	var cars=["saab","volvo","bw"];
+	console.log(cars[1]);*/
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		/*var cars=["saab","volvo","bw"];
+		document.getElementById("demo").innerHTML=cars; */
+	/*
+		document.getElementById('demo').innerHTML =
+		typeof "john" + "<br>" +
+		typeof 3.14 + "<br>" +
+		typeof NAN + "<br>" +
+		typeof false + "<br>" +
+		typeof [1,2,3,4] + "<br>" +
+		typeof {name:'john', age:34} + "<br>" +
+		typeof new Date() + "<br>" +
+		typeof function () {} + "<br>" +
+		typeof mycar + "<br>" +
+		typeof null;*/
+	/*	const intrestRate = 0.16;
+		const intrestRate = 0.14;
+		console.log(intrestRate);*/
+	/*	var name = "walaa Naimat";
+	document.write(name.concat)*/
+	/*document.getElementById("demo").innerHTML=*/
+	/*	name.length + "<br>" +
+		name.indexOf("walaa") + "<br>" +
+		name.lastIndexOf("walaa") + "<br>" +
+		name.search("walaa") + "<br>" +
+		name.slice(5,10) + "<br>" +
+		name.substring(5,11) + "<br>" +
+		name.replace("walaa","lina") + "<br>" +
+		name.toUpperCase() + "<br>" +
+		name.toLowerCase() + "<br>" +
+		name.trim();*/
+		/*var split
+		document.write(split);
+		var str="please find whre is my lcation";
+		var pos=str.search("location");
+		*/
+		/*JavaScript function to check whether an `input` is a string or not*/
+/*		function test()
+		{
+			var number="1234"
+
+			if(typeof(number)=="string")
+			{
+				return number;
+			}
+			if(typeof(number)=="number")
+			{
+				return string;
+			}
+
+		}*/
+		/*JavaScript function to check whether a string is blank or not*/
+/*		is_Blank =  function(input) {
+			if (input.length === 0)
+				return true;
+			else 
+				return false;
+		}
+		console.log(is_Blank(''));
+		console.log(is_Blank('abc'));
+		*/
+		/* JavaScript function to hide email addresses to protect from unauthorized user.*/
+/*		protect_email = function (user_email) {
+			var avg, splitted, part1, part2;
+			splitted = user_email.split("@");
+			part1 = splitted[0];
+			avg = part1.length / 2;
+			part1 = part1.substring(0, (part1.length - avg));
+			part2 = splitted[1];
+			return part1 + "...@" + part2;
+		};*/
+		/* JavaScript function to split a string and convert it into an array of words. */
+/*		string_to_array = function (str) {
+     return str.trim().split(" ");
+		};
+		console.log(string_to_array("Robin Singh"));
+
+		console.log(protect_email("robin_singh@example.com"));*/
+		
+		/* JavaScript function to concatenates a given string n times (default is 1). */
+/*		repeat = function repeat(str, count) {
+			if(typeof(count) == "undefined") {
+				count =1;
+			}
+			return count < 1 ? '' : new Array(count + 1).join(str);
+		}
+		console.log(repeat('Ha!'));
+		console.log(repeat('Ha!',2));
+		console.log(repeat('Ha!',3));*/
+		/* JavaScript function to insert a string within a string at a particular position*/
+/*		insert = function insert(main_string, ins_string, pos) {
+			if(typeof(pos) == "undefined") {
+				pos = 0;
+			}
+			if(typeof(ins_string) == "undefined") {
+				ins_string = '';
+			}
+			return main_string.slice(0, pos) + ins_string + main_string.slice(pos);
+		}
+		console.log(insert('Salameh Yasin'));
+		console.log(insert('Salameh Yasin','Mr. ',0));*/
+
+		/*JavaScript function to truncates a string if it is longer than the specified number of characters. Truncated strings will end with a translatable ellipsis sequence ("…") */
+/*		text_truncate = function(str, length, ending) {
+			if (length == null) {
+				length = 100;
+			}
+			if (ending == null) {
+				ending = '...';
+			}
+			if (str.length > length) {
+				return str.substring(0, length - ending.length) + ending;
+			} else {
+				return str;
+			}
+		};
+		console.log(text_truncate('We are doing JS string exercises.'))
+		console.log(text_truncate('We are doing JS string exercises.',19))*/
+
+		/*JavaScript function to chop a string into chunks of a given length. */
+/*		string_chop =  function(str, size){
+			if (str == null) return [];
+			str = String(str);
+			size = ~~size;
+			return size > 0 ? str.match(new RegExp('.{1,' + size + '}', 'g')) : [str];
+		}
+		console.log(string_chop('w3resource'));
+		console.log(string_chop('w3resource',2));
+*/
+		/* JavaScript function to count the occurrence of a substring in a string.*/
+/*		function count(main_str, sub_str) 
+		{
+			main_str += '';
+			sub_str += '';
+
+			if (sub_str.length <= 0) 
+			{
+				return main_str.length + 1;
+			}
+
+			subStr = sub_str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+			return (main_str.match(new RegExp(subStr, 'gi')) || []).length;
+		}
+
+		console.log(count("The quick brown fox jumps over the lazy dog", 'the'));
+		console.log(count("The quick brown fox jumps over the lazy dog", 'fox',false));
+*/
+		/* JavaScript function to escape a HTML string.*/
+/*		function escape_HTML(html_str) {
+			'use strict';
+			return html_str.replace(/[&<>"]/g, function (tag) {
+				var chars_to_replace = {
+					'&': '&',
+					'<': '<',
+					'>': '>',
+					'"': '"'
+				};
+				return chars_to_replace[tag] || tag;
+			});
+		}
+		console.log(escape_HTML('&lt;a href=&quot;javascript-string-exercise-17.php&quot; target=&quot;_blank&quot;&gt;'));*/
+		var name ="walaa mohd naimat";
+		var email="walaa.naimat@gmail.com";
+		var h="hi";
+		console.log(typeof name);
+		if(name.length==null){
+			console.log('empty');}
+			else{
+				console.log('full');
+			}
+		console.log(name.trim().split(" "));
+
+		var ml="walaa.naimat@gmail.com";
+		var at="...@";
+		var nn=ml.split("@");
+		var n1=
+
+	</script>
+</body>
+</html>
