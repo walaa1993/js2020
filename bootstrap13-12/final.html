@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Universities Art Gallery</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Walaa Naimat">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This website is art gallery website for talented people in universities to encourage students to share their artworks and sell them online">
+	<meta name="keywords" content="art,drawing,drawings,students,canvas,painting,creative,creativity,colors,sell,purchase,pencil drawing,oil colors,sketches,sketchbook,gallery,university art">
+	<link rel="shortcut icon" href="images/w.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/final.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Alatsi|Fjalla+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<style>
+		/* Make the image fully responsive */
+		.carousel-inner img {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script src="js/final.js"></script>
+</head>
+<body>
+
+	<div class="nav">
+		<input type="checkbox" id="nav-check">
+		<div class="nav-header">
+			<div class="nav-title ml-5" id="logo">
+				Art Gallery
+			</div>
+		</div>
+		<div class="nav-btn position-fixed">
+			<label for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		</div>
+		<div class="nav-links pull-right" id="navs">
+			<a href="#" class="text-white pr-5">Home</a>
+			<a href="#about"class="text-white pr-5">About</a>
+			<a href="#gallery" class="text-white pr-5">Gallery</a>
+			<a href="#footer"class="text-white pr-5">Contact</a>
+			<a href="#form"class="text-white pr-5">Form</a>
+			<a href="http://www.facebook.com" target="_blank"> <i class="fab fa-facebook text-white"></i></a>
+		</div>
+	</div>
+	<div class="container-fluid p-3">
+		<nav class="navbar navbar-light bg-light justify-content-between p-2">
+			<img src="images/w.png" width="70px">
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
+	</div>
+
+	<div class="flip-card mx-auto m-5">
+		<div class="flip-card-inner">
+			<div class="flip-card-front">
+				<img src="images/r.jpeg" alt="Avatar" style="width:100%;height: 100%;">
+			</div>
+			<div class="flip-card-back p-3">
+				<h1>Why Us</h1>
+				<p class="text-center">Beauty lies in the eye of the beholder. However, when it comes to artistic expression, truly magnificent masterpieces do not necessarily have to be pretty. Instead, the beauty of an artwork is closely linked to its ability to stimulate emotions within us. Art stills our deep longing for rhythm, balance, and harmony.</p>
+				<p>This website is for niversities artists</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid pt-5 opacity-0.5" id="sec0">
+		<div class="row" id="sec1">
+			<div class="col-md-4">
+				<img src="images/tt.png" width="300">
+			</div>
+			<div class="col-md-8">
+				<p class="text-justify" id="text1">Nestled in a quiet spot behind the busy commercial Um Utheina area, Orfali Gallery and Art Center is a sanctuary of art and creativity. Established in 1993, it is one of the leading galleries in Amman, providing a friendly and approachable environment in which to enjoy art, with collections that are changed on a regular basis. The gallery specializes in artists from the Arab world, but has also hosted exhibitions from England, Italy and New Zealand.</p>
+
+				<button type="button" class="btn btn-info btn-block" id="btn1"><a href="#about" class="text-white">About</a></button>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container p-5" id="about">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>About</h1>
+				<p class="text-justify" id="text2">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="images/qq.jfif" width="100%" class="pt-5" id="aboutpic">
+			</div>
+		</div>
+	</div>
+
+	<hr class="container pb-5">
+
+	<div class="container-fluid" id="gallery">
+		<div class="row bg-white mx-auto" id="inner">
+			<div class="col-md-4 p-3">
+				<div id="demo" class="carousel slide mb-5 sdr" data-ride="carousel">
+
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+					</ul>
+
+					<!-- The slideshow -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images/1.jfif" alt="Los Angeles" width="300" height="200">
+						</div>
+						<div class="carousel-item">
+							<img src="images/4.jfif" alt="Chicago" width="300" height="200">
+						</div>
+						<div class="carousel-item">
+							<img src="images/1.jfif" alt="New York" width="300" height="200">
+						</div>
+						<div class="carousel-item">
+							<img src="images/4.jfif" alt="New York" width="300" height="200">
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-8 pt-5 pr-5">
+				<h1>Gallery</h1>
+				<p class="text-justify" id="text2">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<div class="row">
+				<div class="col-md-6"> <h3 class="text-warning">Artists</h3></div>
+				<div class="col-md-6"><h3 class="text-warning">Info</h3></div>
+				</div>
+				<div class="row">
+				<div class="col-md-6"><img src="images/artist2.jpg" width="100"></div>
+				<div class="col-md-6"><img src="images/info1.jpg" width="100"></div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<hr class="container p-2 mt-5">
+
+	<div class="container mb-5" id="form">
+		<div><h3 class="pull-left mb-4"><i class="fas fa-arrow-circle-right"></i>&emsp;Sign up and share your artworks</h3></div>
+		<form action="action_page.php">
+			<div class="row">
+				<div class="col-25">
+					<label for="fname">First Name</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="lname">Last Name</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="country">Country</label>
+				</div>
+				<div class="col-75">
+					<select id="country" name="country">
+						<option value="australia">Australia</option>
+						<option value="canada">Canada</option>
+						<option value="usa">USA</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="subject">About You</label>
+				</div>
+				<div class="col-75">
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+	
+	<div class="container-fluid text-white" id="footer">	
+		<footer>
+			<div class="row">
+
+				<div class="col-md-4 pr-5 aa">
+					<h2>About Us </h2>
+					<p class="text-justify">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				<div class="col-md-4 aa">
+					<h3>Blog</h3>
+					<h4>Consectetur Adipisicing Elit</h4>
+					<p> May 29, 2018  Admin  19</p>
+					<h4>Dolore Tempora Consequatur</h4>
+					<p> May 29, 2018  Admin  19</p>
+					<h4>Perferendis eum illum</h4>
+					<p> May 29, 2018  Admin  19</p>
+				</div>
+				<div class="col-md-4 ">
+					<h2>Contact Information</h2>
+					<div class="row pt-3">
+						<div class="col-md-2 "><i class="fas fa-map-marker-alt"></i></div>
+						<div class="col-md-10"><p>203 Fake St. Mountain View, San Francisco, USA</p></div>
+					</div>
+					<div class="row">
+						<div class="col-md-2"><i class="fas fa-phone"></i></div>
+						<div class="col-md-10"><p>+2 392 3929 210
+						</p></div>
+					</div>
+					<div class="row pb-3">
+						<div class="col-md-2"><i class="fas fa-envelope"></i></div>
+						<div class="col-md-10"><a href="http://www.gmail.com">walaa.naimat@gmail.com
+						</a></div>
+					</div>
+					<div class="row">
+						<div class="col-md-2"><i class="far fa-clock"></i></div>
+						<div class="col-md-10"><p>  Monday — Friday 8:00am - 5:00pm</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+<div id="last">
+	<div class="col-md-8 text-white p-2">Copyright ©2019 All rights reserved | This Website is made with <i class="fas fa-heart"></i> by Walaa Naimat</div>
+	<div class="col-md-4">
+		<a href="http://www.facebook.com" target="_blank">
+			<i class="fab fa-facebook-f text-white pr-5"></i>
+		</a>
+		<a href="http://www.twitter.com" target="_blank">
+			<i class="fab fa-twitter text-white pr-5"></i>
+		</a>
+		<a href="http://www.linkedin.com" target="_blank">
+			<i class="fab fa-linkedin-in text-white pr-5"></i>
+		</a>
+		<a href="http://www.instagram.com" target="_blank">
+			<i class="fab fa-instagram text-white pr-5"></i>
+		</a>
+	</div>
+</body>
+</html>

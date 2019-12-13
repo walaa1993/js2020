@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var arr1=["sara","sura"];
+		var arr2=[24,26];
+		var output="<table border='1'><tr><td>Number</td><td>Name</td><td>Age</td></tr>";
+		for (i=0;i<=arr1.length;i++)
+		{
+			output += "<tr>";
+			output +="<td>"+i+"</td>";
+			output +="<td>"+arr1[i]+"</td>";
+			output +="<td>"+arr2[i]+"</td></tr>";
+		}
+		output +="</table>";
+		document.write(output);
+	</script>
+	<script src="js/array.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+	background-color: gray;
+}
+#sqr1{
+	border: 3px solid #000;
+	padding: 60px;
+	width: 60px;
+	height: 60px;
+	transition: width,4s;
+	transition-delay: 1s;
+}
+
+#sqr1:hover{
+	width: 100px;
+}
+#sqr2{
+	border: 3px solid #000;
+	padding: 60px;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	transform: rotate(45deg);	
+	left: 0px;
+	top: 0px;
+	transition: width,4s;
+}
+#sqr2:hover{
+	width: 100px;
+}
+#whole{
+	width: 60px;
+	height: 60px;
+	transform: skew(20deg,30deg);	
+	border: 3px solid blue;
+}
