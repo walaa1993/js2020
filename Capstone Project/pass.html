@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Walaa Naimat">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This website is art gallery website for talented people in universities to encourage students to share their artworks and sell them online">
+	<meta name="keywords" content="art,drawing,drawings,students,canvas,painting,creative,creativity,colors,sell,purchase,pencil drawing,oil colors,sketches,sketchbook,gallery,university art">
+	<link rel="shortcut icon" href="img/js.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/online.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+</head>
+<body>
+	
+	<div class="container" id="pass">
+	
+<img src="img/js2.png" class="mb-5" width="470" id="image">
+		<form name="form1" class="login-form" onsubmit="return login()" id="form">
+			<label class="ml-3">Username</label><input type="text" name="name" class="ml-3" required><br><br>
+			<label class="ml-3">Password&emsp;</label><input type="password" name="okay" class="ml-1" required><br><br>
+			<div id="note"></div> <br>
+			<div class="form-check">
+				<label class="form-check-label ml-3">
+      <input type="checkbox" class="form-check-input">
+      <small>Remember Me</small>
+    </label>
+			<button type="submit" id="loginbtn" class="btn btn-login mx-auto text-white float-right">Login</button>
+				</div>		
+		</form>
+		<br><hr>
+		<div class="footer-copyright text-center text-muted" id="footer">© 2020 Copyright: Created By Walaa
+		</div>
+		<br>
+	</div>
+	<script type="text/javascript">
+
+		function login(){
+			var form = document.form1;
+			var username = form.elements["name"].value;
+			var password = form.elements["okay"].value;
+			
+
+			if(username == "admin" && password == "12345"){
+				localStorage.setItem("username", "Admin");
+			var name = localStorage.getItem("username");
+			localStorage.setItem("password", "12345");
+			var pass = localStorage.getItem("password");
+				window.location.href="online.html";
+				return false;
+			} else{
+				document.getElementById('note').innerHTML="Wrong username and/or password! Please try again..";
+				document.getElementById('note').style.color=" #DE6262";
+				return false;
+
+			}
+
+		}
+	</script>
+</body>
+</html>

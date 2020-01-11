@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questions</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Walaa Naimat">
+	<link rel="shortcut icon" href="img/js.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This website is art gallery website for talented people in universities to encourage students to share their artworks and sell them online">
+	<meta name="keywords" content="art,drawing,drawings,students,canvas,painting,creative,creativity,colors,sell,purchase,pencil drawing,oil colors,sketches,sketchbook,gallery,university art">
+	<link rel="shortcut icon" href="img/js.jpeg">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/questions.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  "use strict";
+  
+  var questions = [{
+    question: "Which built-in method adds one or more elements to the end of an array and returns the new length of the array?",
+    choices: ['last()', 'put()', 'push()', 'None of the above.'],
+    correctAnswer: 2
+  }, {
+    question: "Which of the following function of String object combines the text of two strings and returns a new string?",
+    choices: ['add()', 'merge()', 'concat()', 'append()'],
+    correctAnswer: 2
+  }, {
+    question: "Which of the following is not a valid JavaScript variable name?",
+    choices: ['2names', '_first_and_last_names', 'FirstAndLast', 'None of the above'],
+    correctAnswer: 0
+  }, {
+    question: "Choose the client-side JavaScript object:",
+    choices: ["Database","Cursor","Client","FileUpLoad"],
+    correctAnswer: 3
+  }, {
+    question: "JavaScript entities start with _______ and end with _________.",
+    choices: ["Semicolon, colon", "Semicolon, Ampersand", "Ampersand, colon", "Ampersand, semicolon"],
+    correctAnswer: 3
+  }, {
+    question: "Scripting language are",
+    choices: ["High Level Programming language", "Assembly Level programming language", "Machine level programming language"],
+    correctAnswer: 0
+  }, {
+    question: "Which of the following is the structure of an if statement?",
+    choices: ["if (conditional expression is true) thenexecute this codeend if", "if (conditional expression is true)execute this codeend if", "if (conditional expression is true)   {then execute this code>->}", "if (conditional expression is true) then {execute this code}"],
+    correctAnswer: 2
+  }, {
+    question: "Is it possible to nest functions in JavaScript?",
+    choices: ["True","False"],
+    correctAnswer: 0
+  }, {
+    question: "What is mean by (this) keyword in javascript?",
+    choices: ['It refers current object','It referes previous object', 'It is variable which contains value', 'None of the above'],
+    correctAnswer: 0
+  }, {
+    question: "In JavaScript, Window.prompt() method return true or false value ?",
+    choices: ["True","False"],
+    correctAnswer: 1
+  }
+  ];
+  
+  console.log(questions[0].question);
+  
+  var questionCounter = 0; //Tracks question number
+  var selections = []; //Array containing user choices
+  var quiz = $('.content'); //Quiz div object
+  
+  // Display initial question
+  displayNext();
+  
+  // Click handler for the 'next' button
+  $('#next').on('click', function (e) {
+    e.preventDefault();
+    
+    // Suspend click listener during fade animation
+    if(quiz.is(':animated')) {        
+      return false;
+    }
+    choose();
+    
+    // If no user selection, progress is stopped
+    if (isNaN(selections[questionCounter])) {
+      $('#warning').text('Please make a selection!');
+    } else {
+      questionCounter++;
+      displayNext();
+	  $('#warning').text('');
+    }
+  });
+  
+  // Click handler for the 'prev' button
+  $('#prev').on('click', function (e) {
+    e.preventDefault();
+    
+    if(quiz.is(':animated')) {
+      return false;
+    }
+    choose();
+    questionCounter--;
+    displayNext();
+  });
+  
+  
+  
+  // Creates and returns the div that contains the questions and 
+  // the answer selections
+  function createQuestionElement(index) {
+    var qElement = $('<div>', {
+      id: 'question'
+    });
+    
+    var header = $('<h2>Question ' + (index + 1) + ':</h2>');
+    qElement.append(header);
+    
+    var question = $('<p>').append(questions[index].question);
+    qElement.append(question);
+    
+    var radioButtons = createRadios(index);
+    qElement.append(radioButtons);
+	// this is new
+	var warningText = $('<p id="warning">');
+	qElement.append(warningText);
+	
+	return qElement;
+
+  }
+  
+  // Creates a list of the answer choices as radio inputs
+  function createRadios(index) {
+    var radioList = $('<ul>');
+    var item;
+    var input = '';
+    for (var i = 0; i < questions[index].choices.length; i++) {
+      item = $('<li>');
+      input = '<input type="radio" name="answer" value=' + i + ' />';
+      input += questions[index].choices[i];
+      item.append(input);
+      radioList.append(item);
+    }
+    return radioList;
+  }
+  
+  // Reads the user selection and pushes the value to an array
+  function choose() {
+    selections[questionCounter] = +$('input[name="answer"]:checked').val();
+  }
+  
+  // Displays next requested element
+  function displayNext() {
+    quiz.fadeOut(function() {
+      $('#question').remove();
+      
+      if(questionCounter < questions.length){
+        var nextQuestion = createQuestionElement(questionCounter);
+        quiz.append(nextQuestion).fadeIn();
+        if (!(isNaN(selections[questionCounter]))) {
+          $('input[value='+selections[questionCounter]+']').prop('checked', true);
+        }
+        
+        // Controls display of 'prev' button
+        if(questionCounter === 1){
+          $('#prev').show();
+        } else if(questionCounter === 0){
+          
+          $('#prev').hide();
+          $('#next').show();
+        }
+       }else {
+        var scoreElem = displayScore();
+        quiz.append(scoreElem).fadeIn();
+        $('#next').hide();
+        $('#prev').hide();
+        $('#start').show();
+      }
+    });
+  }
+  
+  // Computes score and returns a paragraph element to be displayed
+  function displayScore() {
+    var score = $('<h3>',{id: 'question'});
+    
+    var numCorrect = 0;
+    for (var i = 0; i < selections.length; i++) {
+      if (selections[i] === questions[i].correctAnswer) {
+        numCorrect++;
+      }
+    }
+	// Calculate score and display relevant message
+	var percentage = numCorrect / questions.length;
+	if (percentage >= 0.9){
+    	score.append('Incredible! Your score is ' + numCorrect + ' out of ' +
+                 questions.length+'.' );
+	}
+	
+	else if (percentage >= 0.7){
+    	score.append('Good job! Your score is ' + numCorrect + ' out of ' +
+                 questions.length +'.');
+  }
+	
+	else if (percentage >= 0.5){
+    	score.append('Your score is ' + numCorrect + ' out of ' +
+                 questions.length+'.' );
+
+
+	}
+	
+	else {
+    	score.append('Your score is ' + numCorrect + ' out of ' +
+                 questions.length+'.' );
+	}
+    return score;
+  }
+});
+  </script>
+</head>
+<body>
+  
+
+	<section class="content container-fluid" id="quiz">
+  <button class="btn btn-primary" id="next">Next</button>
+  <button class="btn btn-info" id="prev">Prev</button>
+ 
+ </section>
+</body>
+</html>
