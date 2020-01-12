@@ -179,7 +179,7 @@ $(document).ready(function(){
   // Computes score and returns a paragraph element to be displayed
   function displayScore() {
     var score = $('<h3>',{id: 'question'});
-    
+   
     var numCorrect = 0;
     for (var i = 0; i < selections.length; i++) {
       if (selections[i] === questions[i].correctAnswer) {
@@ -209,6 +209,7 @@ $(document).ready(function(){
     	score.append('Your score is ' + numCorrect + ' out of ' +
                  questions.length+'.' );
 	}
+
     return score;
   }
 });
