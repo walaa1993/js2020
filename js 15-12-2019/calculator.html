@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+	<title></title>
+	<script>
+		var inputIdFirst = "valueOfX",inputIdSecond = "valueOfY",outputId = "resultHere";
+		var getInputs = function(id) {
+			return parseInt(document.getElementById(id).value);
+		}
+		var showOutput = function(outputValue, outputIdAsArg) {
+      //if no argument is given then by default "outputId" taken
+      document.getElementById(outputId).value = outputValue;
+  }
+  var manuplateAs = function(operationName, valueOfX, valueOfY) {
+  	if(operationName == 'add')
+  		return valueOfX + valueOfY;
+  	else if(operationName == 'sub')
+  		return valueOfX - valueOfY;
+  	else if(operationName == 'mul')
+  		return valueOfX * valueOfY;
+  	else if(operationName == 'div')
+  		return valueOfX / valueOfY;
+      //can add as many as you wish 
+  } 
+  var operation = function(operationName){
+  	x = getInputs(inputIdFirst);
+  	y = getInputs(inputIdSecond);
+  	output = manuplateAs(operationName, x, y);
+  	showOutput(output);
+  	console.log(x + " " + operationName + " " + y + " = " + output)
+      //see console to understand this more
+      console.log(this)
+  };
+
+</script>
+</head>
+<body>
+	<div class="container" id="cal">
+		NUM1
+		<input type="number" id="valueOfX">
+		NUM2
+		<input type="number" id="valueOfY"> <br><br>
+		<button onclick="operation('add')"> + </button>
+		<button onclick="operation('sub')"> -</button>
+		<button onclick="operation('mul')"> x</button>
+		<button onclick="operation('div')"> /</button>
+		<input type="number" id="resultHere">
+	</div>
+	<h1 onmouseover="showDate()">Show date</h1>
+
+	<script>
+	function showDate(){
+		var today=new Date();
+		alert(today);
+	}	
+	</script>
+	
+</body>
+</html>

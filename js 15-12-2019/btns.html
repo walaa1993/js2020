@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- <button><a href="process.html?user_name=human" target="_blank">HUMAN</a></button><br>
+<button><a href="process.html?user_name=anmal" target="_blank">ANIMAL</a></button><br>
+<button><a href="process.html?user_name=machine" target="_blank">MACHINE</a></button> -->
+<div id="results"></div>
+	<form name="quizForm" onsubmit="return submitAnswers()">
+	<label>Where we are ?</label><br>
+		<input type="radio" name="answer1" value="Home">Home<br>
+		<input type="radio" name="answer1" value="University">University<br>
+		<input type="radio" name="answer1" value="Street">Street<br>
+	<br><br>
+
+	<label>What your kind ?</label><br>
+		<input type="radio" name="answer2" value="Animal">Animal<br>
+		<input type="radio" name="answer2" value="Machine">Machine<br>
+		<input type="radio" name="answer2" value="Human">Human<br>
+		<input type="radio" name="answer2" value="Other">Other<br>
+
+	<br><br>
+	<label>What you will do after 10 years ?</label><br>
+		<input type="radio" name="answer3" value="Married and set at home">Married & set at home<br>
+		<input type="radio" name="answer3" value="Creat a startup Company">Creat a startup Company<br>
+		<input type="radio" name="answer3" value="Finish a PHD Degree">Finish a PHD Degree<br>
+		<input type="Submit" value="submitAnswers" >
+
+		<br><br>
+
+ 	</form>
+
+ 	<script type="text/javascript">
+ 		function submitAnswers() {
+ 			var form = document.quizForm;
+			var q1 = form.elements['answer1'].value;
+			var q2 = form.elements['answer2'].value;
+			var q3 = form.elements['answer3'].value;
+			var mark= 0 ;
+			if(q1 == "University"){
+				mark++;
+			}
+			if(q2 == "Animal"){
+				mark++;	
+			}
+			if(q3 == "Finish a PHD Degree"){
+				mark++;
+			}
+
+			//var url = "file:///C:/Users/sura.alharahsheh.HTU/Desktop/21-12/process.html?mark="+mark;
+			//alert(url);
+			//window.location.replace(url);
+			//return false;
+		window.location.href='process.html?mark='+mark;
+		return false;
+		}
+			//alert(q1+" "+q2+" "+q3);
+</script> 
+</body>
+</html>

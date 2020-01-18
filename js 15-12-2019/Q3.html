@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form name="quizForm" onsubmit="return submitAnswers()">
+	<label>Q3: What you will do after 10 years ?</label><br>
+		<input type="radio" name="answer3" value="Married and set at home">Married & set at home<br>
+		<input type="radio" name="answer3" value="Creat a startup Company">Creat a startup Company<br>
+		<input type="radio" name="answer3" value="Finish a PHD Degree">Finish a PHD Degree<br>
+		<input type="Submit" value="submitAnswers" >
+
+		<br><br>
+</form>
+<script type="text/javascript">
+ 		function submitAnswers() {
+ 			var form = document.quizForm;
+			var q3 = form.elements['answer3'].value;
+			var mark= 0 ;
+			
+			if(q3 == "Finish a PHD Degree"){
+				mark++;
+			}
+
+			//var url = "file:///C:/Users/sura.alharahsheh.HTU/Desktop/21-12/process.html?mark="+mark;
+			//alert(url);
+			//window.location.replace(url);
+			//return false;
+		window.location.href='process.html?mark='+mark;
+		return false;
+		}
+</body>
+</html>

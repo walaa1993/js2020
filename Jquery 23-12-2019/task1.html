@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="task1.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function(){
+			/*Q1*/$("#bt1").click(function(){
+				$("#para1").show(500);
+			});
+
+			/*Q2*/$("#test").click(function(){
+				$("#js").css("background-color","green");
+				$("#html").css("background-color","red");
+				$("#css").css("background-color","red");
+
+
+			});
+
+			/*Q3*/$("#ramtha").hover(function(){
+				$("#ramtha").css("border","2px solid red");
+				$("#irbid").css("border","none");
+				$("#salt").css("border","none");
+				$("#kbab").css("border","2px solid green");
+				$("#malls").css("border","none");
+				$("#mount").css("border","none");
+			});
+			$("#irbid").hover(function(){
+				$("#irbid").css("border","2px solid red");
+				$("#ramtha").css("border","none");
+				$("#salt").css("border","none");
+				$("#malls").css("border","2px solid green");
+				$("#mount").css("border","none");
+				$("#kbab").css("border","none");
+			});
+			$("#salt").hover(function(){
+				$("#salt").css("border","2px solid red");
+				$("#irbid").css("border","none");
+				$("#ramtha").css("border","none");
+				$("#mount").css("border","2px solid green");
+				$("#kbab").css("border","none");
+				$("#malls").css("border","none");
+			});
+
+			/*Q4*/$("#select").change(function(){
+				if ("#select option") {
+					$(".city").hide(100);
+					$(".state").show(500);
+				}
+			});
+
+			/*Q5*/$("#btnAdd").on('click',function(){    
+				Add();    
+			});    
+			$("#btnSubstract").on('click',function(){    
+				Substract();    
+			})    
+			$("#btnMultiply").on('click',function(){    
+				Multiply();    
+			})    
+			$("#btnDivide").on('click',function(){    
+				Divide();    
+			})    
+		});    
+		function Add(){    
+			var no1=parseInt($("#txtNo1").val());    
+			var no2=parseInt($("#txtNo2").val());    
+			var result =no1+no2;    
+			document.getElementById("result").innerHTML=("The result is "+result);    
+		}    
+		function Substract(){    
+			var no1=parseInt($("#txtNo1").val());    
+			var no2=parseInt($("#txtNo2").val());    
+			var result =no1-no2;    
+			document.getElementById("result").innerHTML=("The result is "+result);    
+		}    
+		function Multiply(){    
+			var no1=parseInt($("#txtNo1").val());    
+			var no2=parseInt($("#txtNo2").val());    
+			var result =no1*no2;    
+			document.getElementById("result").innerHTML=("The result is "+result);    
+		}    
+		function Divide(){    
+			var no1=parseInt($("#txtNo1").val());    
+			var no2=parseInt($("#txtNo2").val());    
+			var result =no1/no2;    
+			document.getElementById("result").innerHTML=("The result is "+result);    
+		} 
+		
+
+	</script>
+</head>
+<body>
+
+	<label>Q1: What is HTU?</label>
+	<button id="bt1">show</button>
+	<div id="para1">htu is a university in amman </div><br><br>
+
+
+	<p>Q2: What is JQuery?</p>
+	<input type="radio" name="q1" value="JS"><span id="js">JS</span><br>
+	<input type="radio" name="q1" value="HTML"><span id="html">HTML</span><br>
+	<input type="radio" name="q1" value="CSS"><span id="css">CSS</span><br>
+	<button id="test">test</button><br><br>
+
+	Q3:
+	<table border="0">
+		<tr>
+			<td id="ramtha">Ramtha</td>
+			<td id="mount">Mountaine</td>
+		</tr>
+		<tr>
+			<td id="irbid">Irbid</td>
+			<td id="malls">Malls</td>
+		</tr>
+		<tr>
+			<td id="salt">Salt</td>
+			<td id="kbab">Kbab</td>
+		</tr>
+	</table><br><br>
+
+	Q4:<br>
+	<label>Country: </label>
+	<select id="select">
+		<option>Jordan</option>
+		<option id="usa">USA</option>
+		<option>Qatar</option>
+	</select>
+	<label id="city">City: </label>
+	<select id="city">
+		<option>Amman</option>
+		<option>LA</option>
+		<option>Doha</option>
+	</select>
+	<div>
+		<label id="state">State: </label>
+		<select id="state">
+			<option>Manhatin</option>
+			<option>Colorado</option>
+			<option>LA</option>
+		</select>
+		<br>
+		<label id="state">State postal:</label>
+		<select id="state">
+			<option>Manhatin</option>
+			<option>Colorado</option>
+			<option>LA</option>
+		</select>
+	</div>
+
+	Q5:<br>
+	First Number <input type="text" id="txtNo1" placeholder="Enter first number"><br>    
+	Second Number<input type="text" id="txtNo2" placeholder="Enter second number"><br>    
+	<input type="button" id="btnAdd" value="Add">    
+	<input type="button" id="btnSubstract" value="Substract">    
+	<input type="button" id="btnMultiply" value="Multiply">    
+	<input type="button" id="btnDivide" value="Divide">
+	<div id="result"></div><br><br>
+
+	Q6:
+	<p>Talk about your self:</p>
+	<textarea cols="20" rows="7" id="text"></textarea><br>
+	<input type="checkbox" name=""> I accept the rules<br>
+	<input type="button" value="submit">
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function(){
+			$("table tr:first").css({
+				"background-color":"black",
+				"width":"300px",
+				"height":"100px",
+				"border":"2px solid black"
+			});
+			$("table tr:odd").css({
+				"background-color":"gray",
+				"width":"300px",
+				"height":"100px"
+				
+			});
+			/*jquery*/
+			$("#one").html("HTU ").css("color","red");/*over right on id=one*/
+			$("#one").append("WELCOME ");/*add after*/
+			$("#one").prepend("TO ");/*add before*/
+			$("#one").after("TO ");/*add tag after*/
+			$("#one").before("welcome ");/*add tag before*/
+
+			/*add attribute to html(ex:a href)*/
+			$("a").attr("target","_blank");
+			$("a").remove(".test");/*removes the whole class, deletes the a*/
+			$("#bt1").click(function(){
+				$("table,div,a").hide(500);
+			});
+			$("#bt2").click(function(){
+				$("table,div,a").show(500);
+			});
+			$("#bt3").click(function(){
+				$("table,div,a").toggle(500);
+			});
+			$("#bt4").click(function(){
+				$("table,div,a").fadeIn(2000);
+			});
+			$("#bt5").click(function(){
+				$("table,div,a").fadeOut(2000);
+			});
+			$("#bt6").click(function(){
+				$("table,div,a").fadeToggle(2000);
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<button id="bt1">hide</button>
+	<button id="bt2">show</button>
+	<button id="bt3">show/hide</button>
+	<button id="bt4">fade in</button>
+	<button id="bt5">fade out</button>
+	<button id="bt6">fade toggle</button>
+	<a href="">google</a><br>
+	<div id="one">walaa</div>
+<table border="2">
+	<tr>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+	</tr>
+	<tr>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+	</tr>
+	<tr>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>wwww</td>
+	</tr>
+	<tr>
+		<td>wwww</td>
+		<td>www</td>
+		<td>www</td>
+		<td>www</td>
+		<td>wwww</td>
+		<td>wwww</td>
+	</tr>
+	<tr>
+		<td>www</td>
+		<td>www</td>
+		<td>wwww</td>
+		<td>wwww</td>
+		<td>wwww</td>
+		<td>wwww</td>
+	</tr>
+</table>
+</body>
+</html>

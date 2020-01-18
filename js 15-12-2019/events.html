@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/events.css">
+	<script src="js/events.js"></script>
+</head>
+<body>
+		<div class="row">
+
+			<div class="col-md-3 border border-primary">
+				<h1>Input Events</h1>
+				<hr>
+				<!-- Input onchange event -->
+				<form>
+					choose your prefered meal:
+					<select id="meals" onchange="preferedMeal()">
+						<option value="Mansaf">Mansaf</option>
+						<option value="Sushi">Sushi</option>
+						<option value="Pizza">Pizza</option>
+					</select>
+				</form>
+				<hr>
+				<!-- Input onfocus event -->
+				Enter Name: <input type="text" onfocus="myFun(this)">
+				<hr>
+				<!-- Input OnKeyUp event -->
+				Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
+			</div>
+
+			<div class="col-md-3 border border-primary">
+				<h1>Mouse Events</h1>
+				<hr>
+				<!-- Mouse Onmousedown which botton event -->
+				<div onmousedown="WhichButton(event);">
+					<p>Walaa</p>
+				</div>
+				<hr>
+				<p id="o">this is a para</p>
+				<button type="button" onclick="displayDate()">Display Date</button>
+			</div>
+
+			<div class="col-md-3">
+				<h1>Click Events</h1>
+				<p ondblclick="myFunction1()">Double Click Here</p>
+				<p id="dem"></p>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-3 border border-primary">
+					<h1>Load Events</h1>
+					<!-- load onerror event -->
+					<img src="image.gif" onerror="imgError()">
+					<p>A function is triggered if an error occurs when loading the image. The function shows an alert box with a text.
+					In this example we refer to an image that does not exist, therefore the onerror event occurs.</p>
+				</div>
+
+				<div class="col-md-3 border border-primary">
+					<h1>Other Events</h1>
+					<!-- onmousedown show-coords event -->
+					<p onmousedown="show_coords(event)">
+					Click this paragraph to display the x and y coordinates of the mouse pointer.</p>
+					<p id="cor"></p>
+				</div>
+
+				<div class="col-md-3 border border-primary">
+					<h1>Copy Text</h1>
+					<!-- onpaste event -->
+					<input type="text" onpaste="myFunction()" value="Paste something in here">
+				</div>
+			</div>
+	</body>
+	</html>

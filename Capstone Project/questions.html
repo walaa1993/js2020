@@ -81,7 +81,7 @@ $(document).ready(function(){
     
     // If no user selection, progress is stopped
     if (isNaN(selections[questionCounter])) {
-      $('#warning').text('Please make a selection!');
+      $('#warning').text('Please select an answer!');
     } else {
       questionCounter++;
       displayNext();
@@ -171,7 +171,6 @@ $(document).ready(function(){
         quiz.append(scoreElem).fadeIn();
         $('#next').hide();
         $('#prev').hide();
-        $('#start').show();
       }
     });
   }

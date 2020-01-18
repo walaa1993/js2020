@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/item-prices.css">
+	<script type="js/item-prices.js"></script>
+</head>
+<body>
+
+	<table border="1">
+		<tr>
+			<td>item</td>
+			<td>price</td>
+			<td>Quantity</td>
+			<td>total</td>
+		</tr>
+		<tr>
+			<td>juice</td>
+			<td><input type="number" placeholder="price" id="pri" ></td>
+			<td><input type="number" placeholder="#Quantity" id="num" min="0" ></td>
+			<td><div id="sum"><input type="number" placeholder="total" onclick="mul()"></div></td>
+		</tr>
+
+		<tr>
+			<td>choclate</td>
+			<td><input type="number" placeholder="price" id="pri2" ></td>
+			<td><input type="number" placeholder="#Quantity" id="num2" min="0" ></td>
+			<td><div id="sum2"><input type="number" placeholder="total" onclick="mul2()"></div></td>
+		</tr>
+		<tr>
+			<td>pepsi</td>
+			<td><input type="number" placeholder="price" id="pri3" ></td>
+			<td><input type="number" placeholder="#Quantity" id="num3" min="0" ></td>
+			<td><div id="sum3"><input type="number" placeholder="total" onclick="mul3()"></div></td>
+		</tr>
+
+		<tr>
+			<td>water</td>
+			<td><input type="number" placeholder="price" id="pri4" ></td>
+			<td><input type="number" placeholder="#Quantity" id="num4" min="0" ></td>
+			<td><div id="sum4"><input type="number" placeholder="total" onclick="mul4()"></div></td>
+		</tr>
+		<tr>
+			<td colspan="4" ><div id="fsum"><input type="number" placeholder="total" onmouseover ="add()" ></div></td>
+		</tr>
+	</table>
+
+
+	<script type="text/javascript">
+		var res = 0;
+		var res2 = 0;
+		var res3 = 0;
+		var res4 = 0;
+		function mul()
+		{
+			var num1=document.getElementById('pri').value;
+			var num2=document.getElementById('num').value;
+			res=parseInt(num1)*parseInt(num2);
+
+
+			document.getElementById("sum").innerHTML=res;
+
+		}
+
+		function mul2()
+		{
+			var num1=document.getElementById('pri2').value;
+			var num2=document.getElementById('num2').value;
+			res2=parseInt(num1)*parseInt(num2);
+
+			document.getElementById("sum2").innerHTML=res2;
+		}
+
+		function mul3()
+		{
+			var num1=document.getElementById('pri3').value;
+			var num2=document.getElementById('num3').value;
+			res3=parseInt(num1)*parseInt(num2);
+
+			document.getElementById("sum3").innerHTML=res3;
+		}
+		function mul4()
+		{
+			var num1=document.getElementById('pri4').value;
+			var num2=document.getElementById('num4').value;
+			res4=parseInt(num1)*parseInt(num2);
+
+			document.getElementById("sum4").innerHTML=res4;
+		}
+
+		function add()
+		{
+
+			var resfinal=res+res2+res3+res4;
+			document.getElementById("fsum").innerHTML=resfinal;
+		}
+
+	</script>
+
+</body>
+</html>

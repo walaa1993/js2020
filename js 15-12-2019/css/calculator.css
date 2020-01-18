@@ -1,0 +1,27 @@
+
+body{
+	background-color: #fff;
+	font-size: 20px;
+}
+#resultHere{
+	border:2px solid black;
+	padding: 50px;
+	width: 350px;
+	background-color: #fff;
+	color: #000;
+}
+#cal{
+	border:2px solid #fff;
+	background-color:#3e3e3e;
+	padding: 20px;
+	color: #fff;
+	width: 490px;
+	border-radius: 30px;
+	margin: 100px;
+}
+#valueOfX{
+	font-weight: bold;
+}
+#valueOfY{
+	font-weight: bold;
+}

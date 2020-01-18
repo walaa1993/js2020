@@ -1,0 +1,1 @@
+alert("FOr better experience view on mobile devices... enjoy the game..Thanks for showing love to my game..67 upvotes..")

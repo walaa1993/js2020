@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form name="quizForm" onsubmit="return submitAnswers()">
+	<label>Q1: Where we are ?</label><br>
+		<input type="radio" name="answer1" value="Home">Home<br>
+		<input type="radio" name="answer1" value="University">University<br>
+		<input type="radio" name="answer1" value="Street">Street<br>
+		<button><a href="Q2.html">next</a></button>
+	<br><br>
+</form>
+<script type="text/javascript">
+ 		function submitAnswers() {
+ 			var form = document.quizForm;
+			var q1 = form.elements['answer1'].value;
+			var mark= 0 ;
+			if(q1 == "University"){
+				mark++;
+			}
+			window.location.href='Q2.html?mark='+mark;
+		return false;
+		}
+
+			//var url = "file:///C:/Users/sura.alharahsheh.HTU/Desktop/21-12/process.html?mark="+mark;
+			//alert(url);
+			//window.location.replace(url);
+			//return false;
+		
+</body>
+</html>

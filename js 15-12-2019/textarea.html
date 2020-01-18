@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/textarea.css">
+</head>
+<body>
+	<h4>Talk about your self: (not less than 20 words)</h4>
+	<textarea cols='50' id='txt1' rows='4' oninput="countWords()"></textarea>
+	<br><br>
+	<div id="Words"></div>
+	<br>
+	<div>
+		<button id="btn" onclick="send()">SEND</button>
+	</div>
+<script type="text/javascript">
+	function countWords(){
+		s = document.getElementById("txt1").value;
+		var x = s.split(" ");
+		var count = x.length;
+		document.getElementById("Words").innerHTML =count;
+		if (count<20) {
+			txt1.style="color: white; background-color: red"}
+		else{
+			txt1.style="color: white; background-color: green"
+			}
+		}
+
+		function send(){
+			if (confirm('Are you sure ?')) {
+				window.open("thnx.html");
+			} else {
+				document.getElementById("txt1").value="";
+			}
+		}
+
+
+	</script>
+	<script type="js/textarea.js">
+	</script>	
+</body>
+</html>

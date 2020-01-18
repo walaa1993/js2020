@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="form1" onsubmit="return submita()">
+	<input type='file' id="uploadImage" name="photo"><br><br>
+	<button>Add+</button>
+	</form>
+<div id="demo"></div>
+	<script type="text/javascript">
+		function submita(){
+			var form=document.form1;
+			var pic=form.elements["photo"].value;
+			var path="file:///C:/Users/GTS/Desktop/Upskilling/HTML%20FILES/walaa2/img/";
+			var x=pic.split('\\');
+			localStorage.setItem("image",x[2]);
+			var e=localStorage.getItem("image");
+			localStorage.setItem("pth",path);
+			var p=localStorage.getItem("pth");
+			/*var t="<img src='"+path+x[2]+"'>";*/
+			var t="<img src='"+p+e+"'>";
+			document.getElementById("demo").innerHTML+=t;
+			return false;
+		}
+
+	</script>
+</body>
+</html>

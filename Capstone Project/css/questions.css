@@ -20,7 +20,8 @@ body {
 #quiz {
     display:none;
     margin-top: 200px;
-    padding: 30px;
+    padding: 40px;
+    height: 400px; 
     font-size: x-large;
     box-shadow: 0px 0px 20px 0px #d3d3d3;
 }
@@ -44,6 +45,7 @@ button {
 
 #prev {
     display:none;
+    margin-top: 250px;
 }
 
 #start {
@@ -63,6 +65,13 @@ button {
     }
 }
 h3{
+    padding-top: 145px;
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
     color:red;
 }
+#next{
+    margin-top: 250px;
+}
+    

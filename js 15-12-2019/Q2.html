@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="quizForm" onsubmit="return submitAnswers()">
+<label>Q2: What your kind ?</label><br>
+		<input type="radio" name="answer2" value="Animal">Animal<br>
+		<input type="radio" name="answer2" value="Machine">Machine<br>
+		<input type="radio" name="answer2" value="Human">Human<br>
+		<input type="radio" name="answer2" value="Other">Other<br>
+		<button><a href="Q3.html">next</a></button>
+		<br><br>
+	</form>
+	<script type="text/javascript">
+ 		function submitAnswers() {
+ 			var form = document.quizForm;
+		
+			var q2 = form.elements['answer2'].value;
+			
+			var mark= 0 ;
+			
+			if(q2 == "Animal"){
+				mark++;	
+			}
+				window.location.href='Q3.html?mark='+mark;
+		return false;
+		}
+
+			//var url = "file:///C:/Users/sura.alharahsheh.HTU/Desktop/21-12/process.html?mark="+mark;
+			//alert(url);
+			//window.location.replace(url);
+			//return false;
+		
+</body>
+</html>

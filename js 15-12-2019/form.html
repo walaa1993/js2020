@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+</head>
+<body>
+	<form action="index.html" name="form1">
+		<label>User Name</label>
+		<input type="text" name="username" placeholder="User name" value="" id="user" oninput="calMyLog()"><br><br>
+		<label>Password</label>
+		<input type="Password" name="Password" placeholder="Your Password" id="pss" oninput="calMyLog()"><br><br>
+		<button id="Login">Login</button>
+	</form>
+
+	<script type="text/javascript">
+		function calMyLog(){
+		/*localStorage.setItem("username","admin");
+		var lastname=localStorage.getItem("username");
+		localStorage.setItem("Password","123456");
+		var lastname=localStorage.getItem("Password");
+		var name=getElementById("user").value;
+		var pass=getElementById("pss").value;
+		if (name=="admin"&pass=="123456") {
+	
+	}
+		
+		else{
+			alert("you are not autherized");
+		}
+	}
+		*/
+		var form=document.form;
+		var user=form.elemnts["user"].value;
+		var pass=form.elemnts["pass"].value;
+	</script>
+</body>
+</html>
